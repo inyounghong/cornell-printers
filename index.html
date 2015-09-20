@@ -18,7 +18,7 @@
     <body>
         <div class="container" ng-controller="MapCtrl">
             <h1>Cornell Printers</h1>
-            <div class="option-wrap" id="color">
+            <div class="option-wrap two">
                 <span ng-class="isActiveColor('BW')" ng-click="setActiveColor('BW')">B/W</span>
                 <span ng-class="isActiveColor('Color')" ng-click="setActiveColor('Color')">Color</span>
             </div>
@@ -33,8 +33,15 @@
             <div id="map"></div>
            
             <br><br>
-           <!-- Printers -->
-           <h2>All Printers</h2>
+
+
+            <!-- Printers -->
+            <h2>All Printers</h2>
+            <div class="option-wrap two">
+                <span ng-click="setNYFilter('!ny')" ng-class="isActiveLocation('!ny')">Ithaca</span>
+                <span ng-click="setNYFilter('ny')" ng-class="isActiveLocation('ny')">New York</span>
+            </div>
+            <br>
 
             <table class="table table-striped">
                 <tr class="head">
@@ -47,7 +54,7 @@
                     <th ng-click="order('duplex')" ng-class="activeOrder('duplex')">Duplex</th>
                 </tr>
 
-                <tr class="filter" ng-repeat="printer in printers | orderBy:orderByField:reverseSort">
+                <tr class="filter" ng-repeat="printer in printers | orderBy:orderByField:reverseSort | filter:NYFilter">
                     <td>{{printer.id}}</td>
                     <td>{{printer.name}}</td>
                     <td>{{printer.printer}}</td>

@@ -11,6 +11,9 @@
   width: 100%;
   margin: 0 auto; }
 
+h1, h2 {
+  margin: 10px 0 20px; }
+
 .option-wrap {
   margin: 5px; }
   .option-wrap span {
@@ -24,17 +27,18 @@
     .option-wrap span:first-of-type {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px; }
+  .option-wrap.two span {
+    width: 150px;
+    margin: 3px -2px !important; }
 
 .active {
   color: #fff !important;
   font-weight: 500; }
 
-.color {
-  width: 150px;
+.color, .location {
   border: 1px solid #FB4D4D;
-  color: #FB4D4D;
-  margin: 3px -2px !important; }
-  .color.active {
+  color: #FB4D4D; }
+  .color.active, .location.active {
     background: #FB4D4D; }
 
 .price {
@@ -62,7 +66,7 @@
   text-align: center;
   cursor: pointer; }
   .head th.active-field {
-    background: #FB4D4D !important;
+    background: #FBBD4D !important;
     color: #fff;
     font-weight: 500; }
 

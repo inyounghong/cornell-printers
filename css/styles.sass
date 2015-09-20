@@ -22,6 +22,9 @@ $red: #FB4D4D
 	width: 100%
 	margin: 0 auto
 
+h1, h2
+	margin: 10px 0 20px
+
 .option-wrap
 	margin: 5px
 
@@ -38,16 +41,19 @@ $red: #FB4D4D
 		&:first-of-type
 			border-top-left-radius: 3px
 			border-bottom-left-radius: 3px
+
+	&.two
+		span
+			width: 150px
+			margin: 3px -2px!important
 	
 .active
 	color: #fff!important
 	font-weight: 500
 
-.color
-	width: 150px
+.color, .location
 	border: 1px solid $red
 	color: $red
-	margin: 3px -2px!important
 
 	&.active
 		background: $red
@@ -85,7 +91,7 @@ $red: #FB4D4D
 	cursor: pointer
 
 	&.active-field
-		background: $red!important
+		background: $color!important
 		color: #fff
 		font-weight: 500
 
