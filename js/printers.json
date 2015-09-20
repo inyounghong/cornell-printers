@@ -921,7 +921,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.4483399, 
+		"lon": -76.483324
 	},
 	{ 
 		"id": "lacolor1", 
@@ -930,7 +932,9 @@
 		"cents": 30,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.4481908, 
+		"lon": -76.4791076
 	},
 	{ 
 		"id": "laplotter1", 
@@ -939,7 +943,9 @@
 		"cents": 1000,
 		"color": "Color",
 		"dpi": 1200, 
-		"duplex": "One-sided"
+		"duplex": "One-sided",
+		"lat": 42.4481908, 
+		"lon": -76.4791076
 	},
 	{ 
 		"id": "laplotter2", 
@@ -948,7 +954,9 @@
 		"cents": 1000,
 		"color": "Color",
 		"dpi": 1200, 
-		"duplex": "One-sided"
+		"duplex": "One-sided",
+		"lat": 42.4482, 
+		"lon": -76.4792
 	},
 	{ 
 		"id": "laprinter2", 
@@ -957,7 +965,9 @@
 		"cents": 10,
 		"color": "BW", 
 		"dpi": 600,
-		"duplex": "One-sided"
+		"duplex": "One-sided",
+		"lat": 42.44819, 
+		"lon": -76.47911
 	},
 	{ 
 		"id": "law-lib1", 
@@ -975,7 +985,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.446540, 
+		"lon": -76.488057
 	},
 	{ 
 		"id": "mann-bsmt-10c", 
