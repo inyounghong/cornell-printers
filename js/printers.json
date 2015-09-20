@@ -295,8 +295,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.4450,
-		"lon": -76.4842,
+		"lat": 42.4447,
+		"lon": -76.4840,
 		"location": "engineering"
 	},
 	{ 
@@ -307,8 +307,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.4450,
-		"lon": -76.4842,
+		"lat": 42.4447,
+		"lon": -76.4840,
 		"location": "engineering"
 	},
 	{ 
@@ -755,8 +755,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44911539,
-		"lon": -76.48351729
+		"lat": 42.44911,
+		"lon": -76.48351
 	},
 	{ 
 		"id": "gs2", 
@@ -766,8 +766,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44911539,
-		"lon": -76.48351729
+		"lat": 42.4492,
+		"lon": -76.4835
 	},
 	{ 
 		"id": "gs3", 
@@ -777,8 +777,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44911539,
-		"lon": -76.48351729
+		"lat": 42.4491,
+		"lon": -76.4837
 	},
 	{ 
 		"id": "he-cad-4214-b1", 
@@ -1135,7 +1135,9 @@
 		"cents": 25,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "mseugrad", 
@@ -1512,7 +1514,7 @@
 		"dpi": 600, 
 		"duplex": "Two-sided",
 		"lat": 42.4459,
-		"lon": -76.4832,
+		"lon": -76.4830,
 		"location": "central"
 	},
 	{ 
@@ -1524,7 +1526,7 @@
 		"dpi": 600, 
 		"duplex": "Two-sided",
 		"lat": 42.4459,
-		"lon": -76.4832,
+		"lon": -76.4831,
 		"location": "central"
 	},
 	{ 

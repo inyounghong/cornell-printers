@@ -144,7 +144,7 @@ app.controller('MapCtrl', function ($scope, $http) {
   // Returns true if item is in list
   function isInList(item, list){
     for (var i = 0; i < list.length; i++){
-      if (list[i] == item || (item >= 30 && list[i] == 30)){
+      if (list[i] == item || (item >= 30 && list[i] == 30) || (item <= 8 && list[i] == 8)){
         return true;
       }
     }
@@ -153,7 +153,9 @@ app.controller('MapCtrl', function ($scope, $http) {
   // Returns > for 30 price button
   $scope.get30 = function(price){
     if (price == 30) return ">";
+    if (price == 8) return "<";
   }
+
 
   $scope.setNYFilter = function(str){
     $scope.NYFilter = str;
