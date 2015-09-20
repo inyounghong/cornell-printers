@@ -1080,7 +1080,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "math-lib3c", 
@@ -1089,7 +1091,9 @@
 		"cents": 25,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "mcfaddin1", 
@@ -1097,8 +1101,10 @@
 		"printer": "Xerox Phaser 4500DT",
 		"cents": 9,
 		"color": "BW",
-		"dpi": 600, 
-		"duplex": "Two-sided"
+		"dpi": 600,
+		"duplex": "Two-sided",
+		"lat": 42.447231, 
+		"lon": -76.488018
 	},
 	{ 
 		"id": "mcfaddin2", 
@@ -1107,7 +1113,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "morrison-1", 
@@ -1116,7 +1124,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.447030, 
+		"lon": -76.469486
 	},
 	{ 
 		"id": "mpslab", 
@@ -1143,7 +1153,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "mth-373", 
@@ -1152,7 +1164,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "mth-374", 
@@ -1161,7 +1175,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "mth-375", 
@@ -1170,7 +1186,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "mth-color", 
@@ -1179,7 +1197,9 @@
 		"cents": 30,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.448173, 
+		"lon": -76.480216
 	},
 	{ 
 		"id": "mth-ilj", 
@@ -1233,7 +1253,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.4501851,
+		"lon": -76.4835893
 	},
 	{ 
 		"id": "mvr159lounge", 
@@ -1242,7 +1264,9 @@
 		"cents": 10,
 		"color": "BW", 
 		"dpi": 600,
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.450201,
+		"lon": -76.479140
 	},
 	{ 
 		"id": "nytech-netprnt1", 
@@ -1251,7 +1275,8 @@
 		"cents": 10,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"location": "ny"
 	},
 	{ 
 		"id": "nytech-netprnt2", 
@@ -1260,7 +1285,8 @@
 		"cents": 10,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"location": "ny"
 	},
 	{ 
 		"id": "olin-lib1", 
