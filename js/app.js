@@ -54,10 +54,10 @@ app.controller('MapCtrl', function ($scope, $http) {
       marker.content = '<div class="infoWindowContent">' + printer.desc + '</div>';
       
       google.maps.event.addListener(marker, 'click', function(){
-        var str = '<div class="title">' + printer.id + '</div>';
+        var str = '<div class="title">' + getImage(printer.color) + printer.id + '</div>';
         str += '<p>' + printer.name + '</p>';
-        str += '<p>' + printer.cents + ' cents | ' + printer.color + '</p>';
-        str += '<p>' + printer.duplex + '</p>';
+        str += '<p><b>' + printer.cents + ' cents</b> - ' + printer.color + ' - ';
+        str += printer.duplex + ' - ' + printer.dpi + ' dpi</p>';
           infoWindow.setContent(str);
           infoWindow.open($scope.map, marker);
       });
@@ -68,6 +68,15 @@ app.controller('MapCtrl', function ($scope, $http) {
   $scope.openInfoWindow = function(e, selectedMarker){
       e.preventDefault();
       google.maps.event.trigger(selectedMarker, 'click');
+  }
+
+
+  // Get b/w or color icon
+  function getImage(color){
+    if(color == "BW"){
+      return '<img src="img/drop.png">';
+    }
+    return '<img src="img/drop-color.png">';
   }
 
   // Updates the list of prices
