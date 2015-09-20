@@ -59,6 +59,12 @@ h1, h2 {
   left: -3px;
   top: 1px; }
 
+.location.active:before {
+  content: url("../img/printer-white.png");
+  position: relative;
+  left: -5px;
+  top: 1px; }
+
 .price {
   width: 100px;
   color: #FBBD4D;
