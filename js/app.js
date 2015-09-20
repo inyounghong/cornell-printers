@@ -1,48 +1,48 @@
 //Angular App Module and Controller
-var sampleApp = angular.module('mapsApp', []);
-sampleApp.controller('MapCtrl', function ($scope, $http) {
+var app = angular.module('mapsApp', []);
+app.controller('MapCtrl', function ($scope, $http) {
 
+  // Selected options
+  $scope.NYFilter = '!ny';
   $scope.selected_color = 'BW';
   $scope.active_prices = [8, 9, 10, 25];
+  $scope.priceFilter = $scope.selected_color;
 
-    // Get printer data
-    $http.get("js/printers.json").success(function(data) {
-        var printer = data;
-        $scope.printers = data;
-        for (i = 0; i < printer.length; i++){
-            createMarker(printer[i]);
-
-        }
-        
-        // Show
-        showMarkers();
-    });
-
-    $http.get("js/prices.json").success(function(data) {
-      $scope.price_list = data;
-      updatePrices();
-    });
-
-    function updatePrices(){
-      $scope.prices = $scope.price_list[0][$scope.selected_color];
-    }
-
-
-    var mapOptions = {
-        zoom: 15,
-        center: new google.maps.LatLng(42.447909,-76.477998),
-    }
-
-
-  
-
-  $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
   $scope.markers = [];
 
-  $scope.priceFilter = $scope.selected_color;
-  
+  // Get printer data
+  $http.get("js/printers.json").success(function(data) {
+      var printer = data;
+      $scope.printers = data;
+      for (i = 0; i < printer.length; i++){
+          createMarker(printer[i]);
+
+      }
+      
+      // Show
+      showMarkers();
+  });
+
+  // Get price data
+  $http.get("js/prices.json").success(function(data) {
+    $scope.price_list = data;
+    updatePrices();
+  });
+
+  // Establish map options
+  var mapOptions = {
+      zoom: 16,
+      center: new google.maps.LatLng(42.449,-76.483),
+  }
+
+  $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  navigator.geolocation.getCurrentPosition(function(pos) {
+          $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+        });
+
   var infoWindow = new google.maps.InfoWindow();
   
+  // Creates markers and adds to markers list
   var createMarker = function (printer){
       var marker = new google.maps.Marker({
           map: null,
@@ -63,7 +63,6 @@ sampleApp.controller('MapCtrl', function ($scope, $http) {
       });
       
       $scope.markers.push(marker);
-      
   }  
 
   $scope.openInfoWindow = function(e, selectedMarker){
@@ -71,6 +70,12 @@ sampleApp.controller('MapCtrl', function ($scope, $http) {
       google.maps.event.trigger(selectedMarker, 'click');
   }
 
+  // Updates the list of prices
+  function updatePrices(){
+    $scope.prices = $scope.price_list[0][$scope.selected_color];
+  }
+
+  // Returns true if marker matches selected color
   function matchColor(marker){
     return (marker.info.color == $scope.selected_color);
   }
@@ -81,7 +86,6 @@ sampleApp.controller('MapCtrl', function ($scope, $http) {
 
   // Filters and displays markers
   function showMarkers() {
-
     for (var i = 0; i < $scope.markers.length; i++){
       var marker = $scope.markers[i];
       if (matchColor(marker) && matchPrice(marker)){
@@ -89,15 +93,9 @@ sampleApp.controller('MapCtrl', function ($scope, $http) {
       } else {
         marker.setMap(null);
       }
-      
     }
   }
 
-  $scope.hideMarkers = function() {
-    for (var i = 0; i < $scope.markers.length; i++){
-        $scope.markers[i].setMap(null);
-    }
-  };
 
   $scope.isActiveColor = function(color){
     if ($scope.selected_color == color){
@@ -118,6 +116,8 @@ sampleApp.controller('MapCtrl', function ($scope, $http) {
     }
     return "price";
   }
+
+
 
   $scope.setActivePrice = function(cents){
     // Remove if already in list
@@ -146,13 +146,21 @@ sampleApp.controller('MapCtrl', function ($scope, $http) {
     if (price == 30) return ">";
   }
 
+  $scope.setNYFilter = function(str){
+    $scope.NYFilter = str;
+  }
 
+  $scope.isActiveLocation = function(str){
+    if ($scope.NYFilter == str){
+      return "location active";
+    }
+    return "location";
+  }
 
   // Table filtering
 
   $scope.orderByField = 'id';
   $scope.reverseSort = false;
-
 
   $scope.order = function(field){
     if (field == $scope.orderByField){

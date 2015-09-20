@@ -1406,7 +1406,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.449782,
+		"lon": -76.481173
 	},
 	{ 
 		"id": "rhodes163-lp1", 
@@ -1415,7 +1417,9 @@
 		"cents": 25,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.443478,
+		"lon": -76.481534
 	},
 	{ 
 		"id": "rhodes163-lp2", 
@@ -1424,7 +1428,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.443478,
+		"lon": -76.481534
 	},
 	{ 
 		"id": "rpcc1", 
@@ -1646,7 +1652,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.443650,
+		"lon": -76.484896
 	},
 	{ 
 		"id": "stimson1", 
@@ -1655,7 +1663,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.447790,
+		"lon": -76.483415
 	},
 	{ 
 		"id": "stimson2", 
@@ -1664,7 +1674,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.447790,
+		"lon": -76.483415
 	},
 	{ 
 		"id": "stimsonres", 
@@ -1673,7 +1685,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.447790,
+		"lon": -76.483415
 	},
 	{ 
 		"id": "tatkon1", 
@@ -1697,8 +1711,7 @@
 		"dpi": 600, 
 		"duplex": "Two-sided",
 		"lat": 42.4440,
-		"lon": -76.4825,
-		"location": "north"
+		"lon": -76.4825
 	},
 	{ 
 		"id": "upson2", 
@@ -1709,8 +1722,7 @@
 		"dpi": 600, 
 		"duplex": "Two-sided",
 		"lat": 42.4440,
-		"lon": -76.4825,
-		"location": "north"
+		"lon": -76.4825
 	},
 	{ 
 		"id": "upson265-lp1", 
@@ -1721,8 +1733,7 @@
 		"dpi": 600, 
 		"duplex": "One-sided",
 		"lat": 42.4440,
-		"lon": -76.4825,
-		"location": "north"
+		"lon": -76.4825
 	},
 	{ 
 		"id": "upson265-lp3", 
@@ -1733,8 +1744,7 @@
 		"dpi": 1200, 
 		"duplex": "One-sided",
 		"lat": 42.4440,
-		"lon": -76.4825,
-		"location": "north"
+		"lon": -76.4825
 	},
 	{ 
 		"id": "upson3c", 
@@ -1745,8 +1755,7 @@
 		"dpi": 600, 
 		"duplex": "Two-sided",
 		"lat": 42.4440,
-		"lon": -76.4825,
-		"location": "north"
+		"lon": -76.4825
 	},
 	{ 
 		"id": "upsonres", 
@@ -1757,8 +1766,7 @@
 		"dpi": 600, 
 		"duplex": "Two-sided",
 		"lat": 42.4440,
-		"lon": -76.4825,
-		"location": "north"
+		"lon": -76.4825
 	},
 	{ 
 		"id": "uris-lib1", 
@@ -1875,7 +1883,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.44701,
+		"lon": -76.48327
 	},
 	{ 
 		"id": "vet-wiswall-np2", 
@@ -1884,7 +1894,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "One-sided"
+		"duplex": "One-sided",
+		"lat": 42.44701,
+		"lon": -76.48327
 	},
 	{ 
 		"id": "vetlib1", 
@@ -1893,7 +1905,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.44701,
+		"lon": -76.48327
 	},
 	{ 
 		"id": "vetlib2", 
@@ -1902,7 +1916,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.44701,
+		"lon": -76.48327
 	},
 	{ 
 		"id": "vetlib3", 
@@ -1911,7 +1927,9 @@
 		"cents": 9,
 		"color": "BW",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.44701,
+		"lon": -76.48327
 	},
 	{ 
 		"id": "vetlib4", 
@@ -1920,7 +1938,9 @@
 		"cents": 25,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.44701,
+		"lon": -76.48327
 	},
 	{ 
 		"id": "vetlib5", 
@@ -1929,7 +1949,9 @@
 		"cents": 25,
 		"color": "Color",
 		"dpi": 600, 
-		"duplex": "Two-sided"
+		"duplex": "Two-sided",
+		"lat": 42.44701,
+		"lon": -76.48327
 	},
 	{ 
 		"id": "whitelab", 
