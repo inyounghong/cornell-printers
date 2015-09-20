@@ -1,6 +1,11 @@
 /* Mixins */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,500);
 /* Colors */
+a {
+  color: #FB4D4D; }
+  a:hover {
+    color: #FBBD4D; }
+
 .container {
   text-align: center;
   padding: 30px;
