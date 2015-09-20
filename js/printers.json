@@ -1310,8 +1310,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44783685,
-		"lon": -76.48445606
+		"lat": 42.44788,
+		"lon": -76.4842
 	},
 	{ 
 		"id": "olin-lib2", 
@@ -1321,8 +1321,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44783685,
-		"lon": -76.48445606
+		"lat": 42.44783,
+		"lon": -76.4841
 	},
 	{ 
 		"id": "olin-lib3", 
@@ -1332,8 +1332,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44783685,
-		"lon": -76.48445606
+		"lat": 42.44783,
+		"lon": -76.4842
 	},
 	{ 
 		"id": "olin-lib4", 
@@ -1343,8 +1343,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44783685,
-		"lon": -76.48445606
+		"lat": 42.44782,
+		"lon": -76.4843
 	},
 	{ 
 		"id": "olin-lib5c", 
@@ -1354,8 +1354,8 @@
 		"color": "Color",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44783685,
-		"lon": -76.48445606
+		"lat": 42.44788,
+		"lon": -76.4842
 	},
 	{ 
 		"id": "olin-lib6", 
@@ -1365,8 +1365,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44783685,
-		"lon": -76.48445606
+		"lat": 42.44782,
+		"lon": -76.4843
 	},
 	{ 
 		"id": "olin-lib7", 
@@ -1376,8 +1376,8 @@
 		"color": "BW",
 		"dpi": 600, 
 		"duplex": "Two-sided",
-		"lat": 42.44783685,
-		"lon": -76.48445606
+		"lat": 42.44784,
+		"lon": -76.4841
 	},
 	{ 
 		"id": "orie-netprint1", 
