@@ -3,7 +3,7 @@ var app = angular.module('mapsApp', []);
 app.controller('MapCtrl', function ($scope, $http) {
 
   // Selected options
-  $scope.NYFilter = '!ny';
+  $scope.NYFilter = {"location":'!ny'};
   $scope.selected_color = 'BW';
   $scope.active_prices = [8, 9, 10, 25];
   $scope.priceFilter = $scope.selected_color;
@@ -158,11 +158,11 @@ app.controller('MapCtrl', function ($scope, $http) {
 
 
   $scope.setNYFilter = function(str){
-    $scope.NYFilter = str;
+    $scope.NYFilter = {"location":str};
   }
 
   $scope.isActiveLocation = function(str){
-    if ($scope.NYFilter == str){
+    if ($scope.NYFilter.location == str){
       return "location active";
     }
     return "location";
