@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="mapsApp">
+    <head>
+    <meta charset="ISO-8859-1">
+    <title>Cornell Printers</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script
+      src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+    </head>
+
+    <body>
+        <div class="container" ng-controller="MapCtrl">
+            <h1>Cornell Printers</h1>
+            <div class="option-wrap" id="color">
+                <span ng-class="isActiveColor('BW')" ng-click="setActiveColor('BW')">B/W</span>
+                <span ng-class="isActiveColor('Color')" ng-click="setActiveColor('Color')">Color</span>
+            </div>
+
+            <div class="option-wrap">
+                <span ng-repeat="price in prices" ng-class="isActivePrice(price)" ng-click="setActivePrice(price)">
+                    {{get30(price)}} {{price}} cents
+                </span>
+            </div>
+
+            <br>
+            <div id="map"></div>
+           
+            <br><br>
+           <!-- Printers -->
+           <h2>All Printers</h2>
+
+            <table class="table table-striped">
+                <tr class="head">
+                    <th ng-click="order('id')" ng-class="activeOrder('id')">Net-Print Id</th>
+                    <th ng-click="order('name')" ng-class="activeOrder('name')">Name</th>
+                    <th ng-click="order('printer')" ng-class="activeOrder('printer')">Printer</th>
+                    <th ng-click="order('cents')" ng-class="activeOrder('cents')">Cents</th>
+                    <th ng-click="order('color')" ng-class="activeOrder('color')">Color</th>
+                    <th ng-click="order('dpi')" ng-class="activeOrder('dpi')">DPI</th>
+                    <th ng-click="order('duplex')" ng-class="activeOrder('duplex')">Duplex</th>
+                </tr>
+
+                <tr class="filter" ng-repeat="printer in printers | orderBy:orderByField:reverseSort">
+                    <td>{{printer.id}}</td>
+                    <td>{{printer.name}}</td>
+                    <td>{{printer.printer}}</td>
+                    <td>{{printer.cents}}</td>
+                    <td>{{printer.color}}</td>
+                    <td>{{printer.dpi}}</td>
+                    <td>{{printer.duplex}}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

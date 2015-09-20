@@ -1,0 +1,69 @@
+/* Mixins */
+/* Colors */
+.container {
+  text-align: center;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+#map {
+  height: 450px;
+  width: 100%;
+  margin: 0 auto; }
+
+.option-wrap {
+  margin: 5px; }
+  .option-wrap span {
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 3px 0px; }
+    .option-wrap span:last-of-type {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
+    .option-wrap span:first-of-type {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+
+.active {
+  color: #fff !important;
+  font-weight: 500; }
+
+.color {
+  width: 150px;
+  border: 1px solid #FB4D4D;
+  color: #FB4D4D;
+  margin: 3px -2px !important; }
+  .color.active {
+    background: #FB4D4D; }
+
+.price {
+  width: 100px;
+  color: #FBBD4D;
+  border: 1px solid #FBBD4D; }
+  .price.active {
+    background: #FBBD4D; }
+
+.title {
+  font-size: 18px;
+  font-weight: 600; }
+
+.gm-style-iw p {
+  margin: 3px 0; }
+
+/* Table */
+.table {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 13px; }
+
+.head th {
+  border-top: none !important;
+  text-align: center;
+  cursor: pointer; }
+  .head th.active-field {
+    background: #FB4D4D !important;
+    color: #fff;
+    font-weight: 500; }
+
+/*# sourceMappingURL=styles.css.map */
